@@ -1,0 +1,7 @@
+interface:
+  display_name: "Fubon TradeAPI"
+  short_description: "Write and verify Fubon API code"
+  default_prompt: "Use $fubon-trade-api to write correct Fubon Neo API code from a natural-language trading or market-data request."
+
+policy:
+  allow_implicit_invocation: true

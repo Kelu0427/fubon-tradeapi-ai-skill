@@ -1,0 +1,424 @@
+# 富邦新一代 API｜程式交易的新武器
+
+
+## TradeAPI
+
+- [SDK 下載](https://www.fbs.com.tw/TradeAPI/docs/download/download-sdk.txt): 最新版本 v2.2.8。
+- [安裝與版本相容性](https://www.fbs.com.tw/TradeAPI/docs/install-compatibility.txt): SDK 安裝方式與各語言最低版本需求。
+- [金鑰申請及管理](https://www.fbs.com.tw/TradeAPI/docs/key.txt): 金鑰申請及管理 文件說明。
+- [資本變動資料](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/corporate-actions/captital-changes.txt): 上市櫃股票及 ETF 之資本變動資料（面額變更、減資、分割）
+- [除權息資料](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/corporate-actions/dividends.txt): 上市、櫃公司除權息資料 (含增資)
+- [申請上市櫃公司](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/corporate-actions/listing-applicants.txt): 上市、櫃公司上市申請資料
+- [開始使用](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/getting-started.txt): 富邦行情 Web API 提供開發者友善的 API 服務。您可以查詢台股的日內行情、行情快照與歷史行情等數據。
+- [Historical Candles](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/historical/candles.txt): 取得 1 年內的上市櫃歷史股價（依代碼查詢），個股資料區間最遠可回溯至 2010 年，指數部分最遠可回溯至 2015 年！
+- [Historical Stats](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/historical/stats.txt): 取得近 52 週股價數據（依代碼查詢）。
+- [Intraday Candles](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/intraday/candles.txt): 股票價格Ｋ線（依代碼查詢）。
+- [Intraday Quote](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/intraday/quote.txt): 股票即時報價（依代碼查詢）。
+- [Intraday Ticker](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/intraday/ticker.txt): 取得股票資訊 (依股票代碼查詢)。
+- [Intraday Tickers](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/intraday/tickers.txt): 股票或指數列表（依條件查詢）。
+- [Intraday Trades](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/intraday/trades.txt): 股票成交明細（依代碼查詢）。
+- [Intraday Volumes](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/intraday/volumes.txt): 股票分價量表（依代碼查詢）。
+- [Snapshot Actives](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/snapshot/actives.txt): 股票成交量值排行（依市場別）。
+- [Snapshot Movers](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/snapshot/movers.txt): 股票漲跌幅排行（依市場別）。
+- [Snapshot Quotes](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/snapshot/quotes.txt): 股票行情快照（依市場別）。
+- [Technical Bbands](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/technical/bbands.txt): 取得特定股票在指定時間範圍內的布林通通 (Bollinger Bands)。
+- [Technical KDJ](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/technical/kdj.txt): 取得特定股票在指定時間範圍內的隨機指標 (KDJ)。
+- [Technical MACD](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/technical/macd.txt): 取得特定股票在指定時間範圍內的指數平滑異同移動平均線 (MACD)。
+- [Technical RSI](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/technical/rsi.txt): 取得特定股票在指定時間範圍內的相對強弱指標 (RSI)。
+- [Technical SMA](https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/technical/sma.txt): 取得特定股票在指定時間範圍內的簡單移動平均 (SMA)。
+- [富邦新一代 API 證券行情服務](https://www.fbs.com.tw/TradeAPI/docs/market-data/intro.txt): 即時行情資料來源為臺灣證券交易所、證券櫃檯買賣中心、臺灣期貨交易所。請您詳閱相關使用規範與聲明。
+- [建立連線](https://www.fbs.com.tw/TradeAPI/docs/market-data/making-connection.txt): 以下範例程式碼示範如何同時建立 5 條行情 WebSocket 連線。
+- [速率限制](https://www.fbs.com.tw/TradeAPI/docs/market-data/rate-limit.txt): 富邦新一代 API 行情服務提供 Web API 與 WebSocket，並設定以下存取限制。
+- [開始使用](https://www.fbs.com.tw/TradeAPI/docs/market-data/websocket-api/getting-started.txt): 富邦行情 WebSocket API 提供台股即時行情服務。透過 WebSocket API 可以滿足您想要接收即時行情的需求。
+- [Aggregates](https://www.fbs.com.tw/TradeAPI/docs/market-data/websocket-api/market-data-channels/aggregates.txt): 接收訂閱股票聚合數據的行情資訊。
+- [Books](https://www.fbs.com.tw/TradeAPI/docs/market-data/websocket-api/market-data-channels/books.txt): 接收訂閱股票最新最佳五檔委買委賣資訊。
+- [Candles](https://www.fbs.com.tw/TradeAPI/docs/market-data/websocket-api/market-data-channels/candles.txt): 接收訂閱股票最新分鐘Ｋ。
+- [Indices](https://www.fbs.com.tw/TradeAPI/docs/market-data/websocket-api/market-data-channels/indices.txt): 接收訂閱股票最新指數行情資料。
+- [Trades](https://www.fbs.com.tw/TradeAPI/docs/market-data/websocket-api/market-data-channels/trades.txt): 接收訂閱股票最新成交資訊。
+- [模式切換](https://www.fbs.com.tw/TradeAPI/docs/market-data/websocket-api/upgrade-guide.txt): 適用版本 v1.0.4 及以上。
+- [開始使用](https://www.fbs.com.tw/TradeAPI/docs/market-data-future/http-api/getting-started.txt): 富邦行情 Web API 提供開發者友善的 API 服務。您可以查詢期貨與期權日內行情等數據。
+- [Intraday Candles](https://www.fbs.com.tw/TradeAPI/docs/market-data-future/http-api/intraday/candles.txt): 期權價格Ｋ線（依商品查詢）。
+- [Products List](https://www.fbs.com.tw/TradeAPI/docs/market-data-future/http-api/intraday/products.txt): 期權契約清單（依條件查詢）。
+- [Intraday Quote](https://www.fbs.com.tw/TradeAPI/docs/market-data-future/http-api/intraday/quote.txt): 期權即時報價（依商品代碼查詢）。
+- [Intraday Ticker](https://www.fbs.com.tw/TradeAPI/docs/market-data-future/http-api/intraday/ticker.txt): 期權基本資料（依條件查詢）。
+- [Intraday Tickers](https://www.fbs.com.tw/TradeAPI/docs/market-data-future/http-api/intraday/tickers.txt): 期權商品列表（依條件查詢）。
+- [Intraday Trades](https://www.fbs.com.tw/TradeAPI/docs/market-data-future/http-api/intraday/trades.txt): 期權成交明細（依代碼查詢）。
+- [Intraday Volumes](https://www.fbs.com.tw/TradeAPI/docs/market-data-future/http-api/intraday/volumes.txt): 期權分價量表（依代碼查詢）。
+- [富邦新一代 API 期貨行情服務](https://www.fbs.com.tw/TradeAPI/docs/market-data-future/intro.txt): 即時行情資料來源為臺灣證券交易所、證券櫃檯買賣中心、臺灣期貨交易所。請您詳閱相關使用規範與聲明。
+- [建立連線](https://www.fbs.com.tw/TradeAPI/docs/market-data-future/making-connection.txt): 以下範例程式碼示範如何同時建立 5 條行情 WebSocket 連線。
+- [速率限制](https://www.fbs.com.tw/TradeAPI/docs/market-data-future/rate-limit.txt): 富邦新一代 API 期貨行情服務提供 Web API 與 WebSocket，並設定以下存取限制。
+- [開始使用](https://www.fbs.com.tw/TradeAPI/docs/market-data-future/websocket-api/getting-started.txt): 富邦行情 WebSocket API 提供期貨即時行情服務。透過 WebSocket API 可以滿足您想要接收即時行情的需求。
+- [Aggregates](https://www.fbs.com.tw/TradeAPI/docs/market-data-future/websocket-api/market-data-channels/aggregates.txt): 接收訂閱期權聚合數據的行情資訊。
+- [Books](https://www.fbs.com.tw/TradeAPI/docs/market-data-future/websocket-api/market-data-channels/books.txt): 接收訂閱期權商品最新最佳五檔委買委賣資訊。
+- [Candles](https://www.fbs.com.tw/TradeAPI/docs/market-data-future/websocket-api/market-data-channels/candles.txt): 接收訂閱期權商品最新分鐘Ｋ。
+- [Trades](https://www.fbs.com.tw/TradeAPI/docs/market-data-future/websocket-api/market-data-channels/trades.txt): 接收訂閱期權商品最新成交資訊。
+- [模式切換](https://www.fbs.com.tw/TradeAPI/docs/market-data-future/websocket-api/upgrade-guide.txt): 適用版本 v1.3.1 及以上。
+- [停損停利單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/advance/TPSL-introduce.txt): 富邦新一代 API 支援條件下單後的停損停利單，。
+- [移動鎖利條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/advance/TrailProfit-introduce.txt): 富邦新一代 API 支援移動鎖利單，。
+- [條件單使用說明](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/Agreements.txt): 本公司為服務投資人，提供網路下單客戶得預先設定下單條件之條件下單功能服務（以下簡稱本功能或本服務）。本服務不收取任何費用，但本公司保留得隨時調整、修正、暫停或終止此項服務之權利；為確保使用者權益及網路交易安全秩序，請投資人於啟用本功能前，詳細閱讀以下條款，以保障投資人的權利，在投資人點選本使用同意書下方之同意鈕，即視為已經詳閱並接受本同意書之內容。
+- [錯誤碼與狀態碼對照表](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/error-codes.txt): 條件單狀態碼與歷史狀態碼對照表
+- [富邦新一代 API 條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/introduction.txt): 富邦新一代 API 條件單與功能簡介。
+- [取消條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/cpp/CancelCondition.txt): 取消條件單（cancel_condition_orders）API 參考。
+- [當沖條件單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/cpp/daytrade/GetDayTradeConditionById.txt): 當沖條件單查詢（get_condition_daytrade_by_id）API 參考。
+- [當沖多條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/cpp/daytrade/MultiConditionDayTrade.txt): 當沖多條件單（multi_conditions_day_trade）API 參考。
+- [當沖單一條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/cpp/daytrade/SingleConditionDayTrade.txt): 當沖單一條件單（single_condition_day_trade）API 參考。
+- [參數對照表](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/cpp/EnumMatrix.txt): 參數對照表（Class）API 參考。
+- [條件單查詢 By 條件單號](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/cpp/GetConditionById.txt): 條件單查詢 By 條件單號（get_condition_order_by_id）API 參考。
+- [歷史條件單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/cpp/GetConditionHistory.txt): 歷史條件單查詢（GetConditionHistory）API 參考。
+- [條件單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/cpp/GetConditionOrder.txt): 條件單查詢（get_condition_order）API 參考。
+- [多條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/cpp/MultiCondition.txt): 多條件單（multi_condition）API 參考。
+- [多條件單包含停損停利](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/cpp/MultiConditionTPSL.txt): 多條件單包含停損停利（multi_condition）API 參考。
+- [單一條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/cpp/SingleCondition.txt): 單一條件單（single_condition）API 參考。
+- [單一條件單包含停損停利](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/cpp/SingleConditionTPSL.txt): 單一條件單包含停損停利（single_condition）API 參考。
+- [分時分量查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/cpp/timeslice/GetTimeSliceOrder.txt): 分時分量查詢（get_time_slice_order）API 參考。
+- [分時分量條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/cpp/timeslice/TimeSliceOrder.txt): 分時分量條件單（time_slice_order）API 參考。
+- [歷史移動鎖利查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/cpp/trailprofit/GetTrailHistory.txt): 歷史移動鎖利查詢（get_trail_history）API 參考。
+- [移動鎖利查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/cpp/trailprofit/GetTrailOrder.txt): 移動鎖利查詢（get_trail_order）API 參考。
+- [移動鎖利條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/cpp/trailprofit/TrailOrder.txt): 移動鎖利條件單（trail_profit）API 參考。
+- [取消條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/csharp/CancelCondition.txt): 取消條件單（CancelConditionOrders）API 參考。
+- [當沖條件單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/csharp/daytrade/GetConditionDayTradeId.txt): 當沖條件單查詢（GetConditionDaytradeById）API 參考。
+- [當沖多條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/csharp/daytrade/MultiConditionDayTrade.txt): 當沖多條件單（MultiConditionDayTrade）API 參考。
+- [當沖單一條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/csharp/daytrade/SingleConditionDayTrade.txt): 當沖單一條件單（SingleConditionDayTrade）API 參考。
+- [參數對照表](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/csharp/EnumMatrix.txt): 參數對照表（Class）API 參考。
+- [條件單查詢 By 條件單號](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/csharp/GetConditionById.txt): 條件單查詢 By 條件單號（GetConditionOrderById）API 參考。
+- [歷史條件單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/csharp/GetConditionHistory.txt): 歷史條件單查詢（GetConditionHistory）API 參考。
+- [條件單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/csharp/GetConditionOrder.txt): 條件單查詢（GetConditionOrder）API 參考。
+- [多條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/csharp/MultiCondition.txt): 多條件單（MultiCondition）API 參考。
+- [多條件單包含停損停利](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/csharp/MultiConditionTPSL.txt): 多條件單包含停損停利（MultiCondition）API 參考。
+- [單一條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/csharp/SingleCondition.txt): 單一條件單（SingleCondition）API 參考。
+- [單一條件單包含停損停利](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/csharp/SingleConditionTPSL.txt): 單一條件單包含停損停利（SingleCondition）API 參考。
+- [分時分量查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/csharp/timeslice/GetTimeSliceOrder.txt): 分時分量查詢（GetTimeSliceOrder）API 參考。
+- [分時分量條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/csharp/timeslice/TimeSliceOrder.txt): 分時分量條件單（TimeSliceOrder）API 參考。
+- [歷史移動鎖利查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/csharp/trailprofit/GetTrailHistory.txt): 歷史移動鎖利查詢（GetTrailHistory）API 參考。
+- [移動鎖利查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/csharp/trailprofit/GetTrailOrder.txt): 移動鎖利查詢（GetTrailOrder）API 參考。
+- [移動鎖利條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/csharp/trailprofit/TrailOrder.txt): 移動鎖利條件單（TrailProfit）API 參考。
+- [取消條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/nodejs/CancelCondition.txt): 取消條件單（cancelConditionOrders）API 參考。
+- [當沖條件單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/nodejs/daytrade/GetConditionDaytradeById.txt): 當沖條件單查詢（getConditionDaytradeById）API 參考。
+- [當沖多條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/nodejs/daytrade/MultiConditionDayTrade.txt): 當沖多條件單（multiConditionDayTrade）API 參考。
+- [當沖單一條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/nodejs/daytrade/SingleConditionDayTrade.txt): 當沖單一條件單（singleConditionDayTrade）API 參考。
+- [參數對照表](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/nodejs/EnumMatrix.txt): 參數對照表（Class）API 參考。
+- [條件單查詢 By 條件單號](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/nodejs/GetConditionById.txt): 條件單查詢 By 條件單號（getConditionOrderById）API 參考。
+- [歷史條件單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/nodejs/GetConditionHistory.txt): 歷史條件單查詢（getConditionHistory）API 參考。
+- [條件單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/nodejs/GetConditionOrder.txt): 條件單查詢（getConditionOrder）API 參考。
+- [多條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/nodejs/MultiCondition.txt): 多條件單（multiCondition）API 參考。
+- [多條件單包含停損停利](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/nodejs/MultiConditionTPSL.txt): 多條件單包含停損停利（multiCondition）API 參考。
+- [單一條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/nodejs/SingleCondition.txt): 單一條件單（singleCondition）API 參考。
+- [單一條件單包含停損停利](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/nodejs/SingleConditionTPSL.txt): 單一條件單包含停損停利（singleCondition）API 參考。
+- [分時分量查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/nodejs/timeslice/GetTimeSliceOrder.txt): 分時分量查詢（getTimeSliceOrder）API 參考。
+- [分時分量條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/nodejs/timeslice/TimeSliceOrder.txt): 分時分量條件單（timeSliceOrder）API 參考。
+- [歷史移動鎖利查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/nodejs/trailprofit/GetTrailHistory.txt): 歷史移動鎖利查詢（getTrailHistory）API 參考。
+- [移動鎖利查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/nodejs/trailprofit/GetTrailOrder.txt): 移動鎖利查詢（getTrailOrder）API 參考。
+- [移動鎖利條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/nodejs/trailprofit/TrailOrder.txt): 移動鎖利條件單（trailProfit）API 參考。
+- [取消條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/python/CancelCondition.txt): 取消條件單（cancel_condition_order）API 參考。
+- [當沖條件單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/python/daytrade/GetConditionById.txt): 當沖條件單查詢（get_condition_daytade_by_id）API 參考。
+- [當沖多條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/python/daytrade/MultiConditionDayTrade.txt): 當沖多條件單（multi_condition_day_trade）API 參考。
+- [當沖單一條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/python/daytrade/SingleConditionDayTrade.txt): 當沖單一條件單（single_condition_day_trade）API 參考。
+- [參數對照表](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/python/EnumMatrix.txt): 參數對照表（Class）API 參考。
+- [條件單查詢By Guid](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/python/GetConditionById.txt): 條件單查詢 By 條件單號（get_condition_order_by_id）API 參考。
+- [歷史條件單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/python/GetConditionHistory.txt): 歷史條件單查詢（get_condition_history）API 參考。
+- [條件單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/python/GetConditionOrder.txt): 條件單查詢（get_condition_order）API 參考。
+- [多條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/python/MultiCondition.txt): 多條件單（multi_condition）API 參考。
+- [多條件單包含停損停利](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/python/MultiConditionTPSL.txt): 多條件單包含停損停利（multiCondition）API 參考。
+- [單一條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/python/SingleCondition.txt): 單一條件單（single_condition）API 參考。
+- [單一條件單包含停損停利](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/python/SingleConditionTPSL.txt): 單一條件單包含停損停利（single_condition）API 參考。
+- [分時分量查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/python/timeslice/GetTimeSliceOrder.txt): 分時分量查詢（get_time_slice_order）API 參考。
+- [分時分量條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/python/timeslice/TimeSliceOrder.txt): 分時分量條件單（time_slice_order）API 參考。
+- [歷史移動鎖利查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/python/trailprofit/GetTrailHistory.txt): 歷史移動鎖利查詢（get_trail_history）API 參考。
+- [有效移動鎖利查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/python/trailprofit/GetTrailOrder.txt): 移動鎖利查詢（get_trail_order）API 參考。
+- [移動鎖利條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/library/python/trailprofit/TrailOrder.txt): 移動鎖利條件單（trail_profit）API 參考。
+- [事前準備](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/prepare.txt): 在開始富邦新一代 API 條件單前，請先詳細閱讀 使用說明 並完成簽署條件單使用同意書。
+- [緊急應變措施](https://www.fbs.com.tw/TradeAPI/docs/smart-condition/trobleshoot.txt): 若有因不可抗力之因素或系統異常，而造成無法下單或確認委託成交狀況時，請使用其他平台作為備援。
+- [停損停利單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/advance/TPSL-introduce.txt): 富邦新一代 API 支援條件下單後的停損停利單，。
+- [移動鎖利條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/advance/TrailProfit-introduce.txt): 富邦新一代 API 支援移動鎖利單，。
+- [條件單風險聲明](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/Agreements.txt): 本公司為服務投資人，提供網路下單客戶得預先設定下單條件之條件下單功能服務（以下簡稱本功能或本服務）。本服務不收取任何費用，但本公司保留得隨時調整、修正、暫停或終止此項服務之權利；為確保使用者權益及網路交易安全秩序，請投資人於啟用本功能前，詳細閱讀以下條款，以保障投資人的權利，在投資人點選本使用同意書下方之同意鈕，即視為已經詳閱並接受本同意書之內容。
+- [錯誤碼與狀態碼對照表](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/error-codes.txt): 期貨條件單狀態碼與歷史狀態碼對照表
+- [富邦新一代 API 期貨條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/introduction.txt): 簡介（-----）API 參考。
+- [取消條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/csharp/CancelCondition.txt): 取消條件單（CancelConditionOrders）API 參考。
+- [參數對照表](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/csharp/EnumMatrix.txt): 參數對照表（Class）API 參考。
+- [條件單查詢 By 條件單號](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/csharp/GetConditionById.txt): 條件單查詢 By 條件單號（GetConditionOrderById）API 參考。
+- [歷史條件單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/csharp/GetConditionHistory.txt): 歷史條件單查詢（GetConditionHistory）API 參考。
+- [條件單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/csharp/GetConditionOrder.txt): 條件單查詢（GetConditionOrder）API 參考。
+- [多條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/csharp/MultiCondition.txt): 多條件單（MultiCondition）API 參考。
+- [多條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/csharp/MultiConditionTPSL.txt): 多條件單包含停損停利（MultiCondition）API 參考。
+- [單一條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/csharp/SingleCondition.txt): 單一條件單（SingleCondition）API 參考。
+- [單一條件單包含停損停利](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/csharp/SingleConditionTPSL.txt): 單一條件單包含停損停利（SingleCondition）API 參考。
+- [分時分量單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/csharp/timeslice/GetTimeSliceOrder.txt): 分時分量單查詢（GetTimeSliceOrder）API 參考。
+- [分時分量條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/csharp/timeslice/TimeSliceOrder.txt): 分時分量條件單（TimeSliceOrder）API 參考。
+- [歷史移動鎖利查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/csharp/trailprofit/GetTrailHistory.txt): 歷史移動鎖利查詢（GetTrailHistory）API 參考。
+- [移動鎖利查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/csharp/trailprofit/GetTrailOrder.txt): 移動鎖利查詢（GetTrailOrder）API 參考。
+- [移動鎖利條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/csharp/trailprofit/TrailOrder.txt): 移動鎖利條件單（TrailProfit）API 參考。
+- [取消條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/nodejs/CancelCondition.txt): 取消條件單（cancelConditionOrders）API 參考。
+- [參數對照表](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/nodejs/EnumMatrix.txt): 參數對照表（Class）API 參考。
+- [條件單查詢 By 條件單號](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/nodejs/GetConditionById.txt): 條件單查詢 By 條件單號（getConditionOrderById）API 參考。
+- [歷史條件單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/nodejs/GetConditionHistory.txt): 歷史條件單查詢（getConditionHistory）API 參考。
+- [條件單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/nodejs/GetConditionOrder.txt): 條件單查詢（getConditionOrder）API 參考。
+- [多條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/nodejs/MultiCondition.txt): 多條件單（multiCondition）API 參考。
+- [多條件單包含停損停利](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/nodejs/MultiConditionTPSL.txt): 多條件單包含停損停利（multiCondition）API 參考。
+- [單一條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/nodejs/SingleCondition.txt): 單一條件單（singleCondition）API 參考。
+- [單一條件單包含停損停利](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/nodejs/SingleConditionTPSL.txt): 單一條件單包含停損停利（singleCondition）API 參考。
+- [分時分量查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/nodejs/timeslice/GetTimeSliceOrder.txt): 分時分量查詢（getTimeSliceOrder）API 參考。
+- [分時分量條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/nodejs/timeslice/TimeSliceOrder.txt): 分時分量條件單（timeSliceOrder）API 參考。
+- [歷史移動鎖利查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/nodejs/trailprofit/GetTrailHistory.txt): 歷史移動鎖利查詢（getTrailHistory）API 參考。
+- [移動鎖利查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/nodejs/trailprofit/GetTrailOrder.txt): 移動鎖利查詢（getTrailOrder）API 參考。
+- [移動鎖利條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/nodejs/trailprofit/TrailOrder.txt): 僅支援日盤交易。
+- [取消條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/python/CancelCondition.txt): 取消條件單（cancel_condition_order）API 參考。
+- [參數對照表](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/python/EnumMatrix.txt): 參數對照表（Class）API 參考。
+- [條件單查詢By Guid](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/python/GetConditionById.txt): 條件單查詢 By 條件單號（get_condition_order_by_id）API 參考。
+- [歷史條件單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/python/GetConditionHistory.txt): 歷史條件單查詢（get_condition_history）API 參考。
+- [條件單查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/python/GetConditionOrder.txt): 條件單查詢（get_condition_order）API 參考。
+- [多條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/python/MultiCondition.txt): 多條件單（multi_condition）API 參考。
+- [多條件單包含停損停利](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/python/MultiConditionTPSL.txt): 多條件單包含停損停利（multiCondition）API 參考。
+- [單一條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/python/SingleCondition.txt): 單一條件單（single_condition）API 參考。
+- [單一條件單包含停損停利](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/python/SingleConditionTPSL.txt): 單一條件單包含停損停利（single_condition）API 參考。
+- [分時分量查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/python/timeslice/GetTimeSliceOrder.txt): 分時分量查詢（get_time_slice_order）API 參考。
+- [分時分量條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/python/timeslice/TimeSliceOrder.txt): 分時分量條件單（time_slice_order）API 參考。
+- [歷史移動鎖利查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/python/trailprofit/GetTrailHistory.txt): 歷史移動鎖利查詢（get_trail_history）API 參考。
+- [移動鎖利查詢](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/python/trailprofit/GetTrailOrder.txt): 移動鎖利查詢（get_trail_order）API 參考。
+- [移動鎖利條件單](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/library/python/trailprofit/TrailOrder.txt): 移動鎖利條件單（trail_profit）API 參考。
+- [事前準備](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/prepare.txt): 在開始富邦新一代 API 條件單前，您必須完成簽署條件單智慧單。
+- [緊急應變措施](https://www.fbs.com.tw/TradeAPI/docs/smart-condition-future/trobleshoot.txt): 若有因不可抗力之因素或系統異常，而造成無法下單或確認委託成交狀況時，請使用其他平台作為備援。
+- [API Key 說明](https://www.fbs.com.tw/TradeAPI/docs/trading/api-key-apply.txt): 2.2.7版本新增功能。
+- [帳務](https://www.fbs.com.tw/TradeAPI/docs/trading/guide/account_example.txt): 帳務（------）API 參考。
+- [非阻塞下單](https://www.fbs.com.tw/TradeAPI/docs/trading/guide/advance/asyn_order.txt): 首先，我們先理解阻塞與非阻塞的概念，。
+- [主動回報範例（輕量風控版）](https://www.fbs.com.tw/TradeAPI/docs/trading/guide/advance/callback/callback_example_dt3.txt): 輕量風控為大戶下單服務，需另外申請開通，詳情請洽所屬營業員。
+- [主動回報範例（標準版）](https://www.fbs.com.tw/TradeAPI/docs/trading/guide/advance/callback/callback_example_standard.txt): 以下列舉主動回報範例，包含阻塞式 (non-async, unblock=False) 及 非阻塞式 (async, unblock=True) 功能。
+- [連線參數修改](https://www.fbs.com.tw/TradeAPI/docs/trading/guide/advance/ping_pong.txt): 新一代 API SDK 使用 WebSocket 安全連線方式與富邦伺服器主機建立連線，使用標準的 ping/pong control frames 進行連線確認。預設每 30 秒發送 ping frame 給伺服器，若達連續兩次無收到伺服器 pong 回應即判斷連線品質較弱，並進行斷線與提示。
+- [Python主動回報例外處理](https://www.fbs.com.tw/TradeAPI/docs/trading/guide/advance/python_callback_decorator.txt): 使用 Python 主動回報時，因為主動回報機制於獨自的 thread 中運行，因此若主動回報 callback function 內自己寫的程式碼執行產生錯誤，不會自動丟回錯誤訊息，可能造成程式 DEBUG 上的障礙。
+- [斷線重連](https://www.fbs.com.tw/TradeAPI/docs/trading/guide/advance/reconnect.txt): 以下將用簡單示範，利用callback偵測交易Socket，接收到斷線事件後，程式自動進行Socket重新連線:。
+- [錯誤碼與狀態碼對照表](https://www.fbs.com.tw/TradeAPI/docs/trading/guide/error-codes.txt): API 錯誤碼、狀態碼與事件代碼對照表
+- [主動回報](https://www.fbs.com.tw/TradeAPI/docs/trading/guide/report_example.txt): 主動回報（--------）API 參考。
+- [交易](https://www.fbs.com.tw/TradeAPI/docs/trading/guide/trade_example.txt): 交易（--------）API 參考。
+- [富邦新一代 API](https://www.fbs.com.tw/TradeAPI/docs/trading/introduction.txt): 富邦新一代 API 交易與行情服務簡介。
+- [銀行餘額查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/accountManagement/Balance.txt): 銀行餘額查詢（BankRemain）API 參考。
+- [庫存查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/accountManagement/Inventories.txt): 庫存查詢（inventories）API 參考。
+- [維持率查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/accountManagement/Maintenance.txt): 維持率查詢（Maintenance）API 參考。
+- [交割款查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/accountManagement/QuerySettlement.txt): 交割款查詢（QuerySettlement）API 參考。
+- [已實現損益查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/accountManagement/RealizedPnLDetail.txt): 已實現損益查詢（realized_gains_and_loses）API 參考。
+- [已實現損益彙總](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/accountManagement/RealizedPnLSum.txt): 已實現損益彙總（realized_gains_and_loses_summary）API 參考。
+- [未實現損益查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/accountManagement/UnrealizedPnLDetail.txt): 未實現損益查詢（unrealized_gains_and_loses）API 參考。
+- [參數對照表](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/EnumMatrix.txt): 參數對照表（Class）API 參考。
+- [API Key 登入](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/login/login_apikey.txt): API Key 登入（apikey_login）API 參考。
+- [登入](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/login/login_password.txt): 登入（login）API 參考。
+- [刪除批次委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/trade/batchOrder/BatchCancelOrder.txt): 刪除批次委託單（batch_cancel_order）API 參考。
+- [批次修改委託價格](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/trade/batchOrder/BatchModifyPrice.txt): 批次修改委託價格（batch_modify_price）API 參考。
+- [批次修改委託數量](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/trade/batchOrder/BatchModifyQuantity.txt): 批次修改委託數量（batch_modify_quantity）API 參考。
+- [取得批次委託明細](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/trade/batchOrder/BatchOrderDetail.txt): 取得批次委託明細（batch_order_detail）API 參考。
+- [取得批次委託列表](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/trade/batchOrder/BatchOrderList.txt): 取得批次委託列表（batch_order_lists）API 參考。
+- [建立批次委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/trade/batchOrder/BatchPlaceOrder.txt): 建立批次委託單（batch_place_order）API 參考。
+- [刪除委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/trade/CancelOrder.txt): 刪除委託單（cancel_order）API 參考。
+- [現冲券配額查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/trade/DaytradeAndStockInfo.txt): 現冲券配額查詢（daytrade_and_stock_info）API 參考。
+- [查詢歷史成交](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/trade/FilledHistory.txt): 查詢歷史成交（FilledHistory）API 參考。
+- [取得委託單結果](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/trade/GetOrderResults.txt): 取得委託單結果（GetOrderResult）API 參考。
+- [取得委託單結果 (含歷程)](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/trade/GetOrderResultsDetail.txt): 取得委託單結果 (含歷程)（GetOrderResultDetail）API 參考。
+- [資券配額查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/trade/MarginQuota.txt): 資券配額查詢（margin_quota）API 參考。
+- [修改委託價格](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/trade/ModifyPrice.txt): 修改委託價格（modify_price）API 參考。
+- [修改委託單數量](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/trade/ModifyQuantity.txt): 修改委託單數量（modify_quantity）API 參考。
+- [查詢歷史委託](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/trade/OrderHistory.txt): 查詢歷史委託（order_history）API 參考。
+- [建立委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/trade/PlaceOrder.txt): 建立委託單（place_order）API 參考。
+- [查詢股票報價資訊](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/trade/QuerySymbolQuote.txt): 查詢股票報價資訊（query_symbol_quote）API 參考。
+- [查詢市場漲跌幅](https://www.fbs.com.tw/TradeAPI/docs/trading/library/cpp/trade/QuerySymbolSnapshot.txt): 查詢市場漲跌幅（query_symbol_snapshot）API 參考。
+- [銀行餘額查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/accountManagement/Balance.txt): 銀行餘額查詢（BankRemain）API 參考。
+- [庫存查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/accountManagement/Inventories.txt): 庫存查詢（Inventories）API 參考。
+- [維持率查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/accountManagement/Maintenance.txt): 維持率查詢（Maintenance）API 參考。
+- [交割款查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/accountManagement/QuerySettlement.txt): 交割款查詢（QuerySettlement）API 參考。
+- [已實現損益查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/accountManagement/RealizedPnLDetail.txt): 已實現損益查詢（RealizedGainsAndLoses）API 參考。
+- [已實現損益彙總](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/accountManagement/RealizedPnLSum.txt): 已實現損益彙總（RealizedGainsAndLosesSummary）API 參考。
+- [未實現損益查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/accountManagement/UnrealizedPnLDetail.txt): 未實現損益查詢（UnrealizedGainsAndLoses）API 參考。
+- [參數對照表](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/EnumMatrix.txt): 參數對照表（Class）API 參考。
+- [API Key 登入](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/login/loginAPIKey.txt): API Key 登入（ApikeyLogin）API 參考。
+- [登入](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/login/loginPassword.txt): 登入（Login）API 參考。
+- [登出](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/logout.txt): 登出（Logout）API 參考。
+- [刪除批次委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/trade/batchOrder/BatchCancelOrder.txt): 刪除批次委託單（BatchCancelOrder）API 參考。
+- [批次修改委託價格](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/trade/batchOrder/BatchModifyPrice.txt): 批次修改委託價格（BatchModifyPrice）API 參考。
+- [批次修改委託數量](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/trade/batchOrder/BatchModifyQuantity.txt): 批次修改委託數量（BatchModifyPrice）API 參考。
+- [取得批次委託明細](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/trade/batchOrder/BatchOrderDetail.txt): 取得批次委託明細（BatchOrderDetail）API 參考。
+- [取得批次委託列表](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/trade/batchOrder/BatchOrderList.txt): 取得批次委託列表（BatchOrderLists）API 參考。
+- [建立批次委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/trade/batchOrder/BatchPlaceOrder.txt): 建立批次委託單（BatchPlaceOrder）API 參考。
+- [刪除委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/trade/CancelOrder.txt): 刪除委託單（CancelOrder）API 參考。
+- [現冲券配額查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/trade/DaytradeAndStockInfo.txt): 現冲券配額查詢（DaytradeAndStockInfo）API 參考。
+- [查詢歷史成交](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/trade/FilledHistory.txt): 查詢歷史成交（FilledHistory）API 參考。
+- [取得委託單結果](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/trade/GetOrderResults.txt): 取得委託單結果（GetOrderResult）API 參考。
+- [取得委託單結果 (含歷程)](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/trade/GetOrderResultsDetail.txt): 取得委託單結果 (含歷程)（GetOrderResultDetail）API 參考。
+- [資券配額查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/trade/MarginQuota.txt): 資券配額查詢（MarginQuota）API 參考。
+- [修改委託價格](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/trade/ModifyPrice.txt): 修改委託價格（ModifyPrice）API 參考。
+- [修改委託單數量](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/trade/ModifyQuantity.txt): 修改委託單數量（ModifyQuantity）API 參考。
+- [查詢歷史委託](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/trade/OrderHistory.txt): 查詢歷史委託（OrderHistory）API 參考。
+- [建立委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/trade/PlaceOrder.txt): 建立委託單（PlaceOrder）API 參考。
+- [查詢商品漲跌幅報表（單筆）](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/trade/QuerySymbolQuote.txt): 查詢商品漲跌幅報表（單筆）（QuerySymbolQuote）API 參考。
+- [查詢商品漲跌幅報表（批次）](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/trade/QuerySymbolSnapshot.txt): 查詢商品漲跌幅報表（批次）（QuerySymbolSnapshot）API 參考。
+- [版本升級指南](https://www.fbs.com.tw/TradeAPI/docs/trading/library/csharp/upgrade-guide.txt): 本文件將引導您將現有的Fubon Neo API v1.0.4 版本升級至的 v1.3.1 以後版本。
+- [銀行餘額查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/accountManagement/Balance.txt): 銀行餘額查詢（BankRemain）API 參考。
+- [庫存查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/accountManagement/Inventories.txt): 庫存查詢（Inventories）API 參考。
+- [維持率查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/accountManagement/Maintenance.txt): 維持率查詢（Maintenance）API 參考。
+- [交割款查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/accountManagement/QuerySettlement.txt): 交割款查詢（QuerySettlement）API 參考。
+- [已實現損益查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/accountManagement/RealizedPnLDetail.txt): 已實現損益查詢（RealizedGainsAndLoses）API 參考。
+- [已實現損益彙總](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/accountManagement/RealizedPnLSum.txt): 已實現損益彙總（RealizedGainsAndLosesSummary）API 參考。
+- [未實現損益查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/accountManagement/UnrealizedPnLDetail.txt): 未實現損益查詢（UnrealizedGainsAndLoses）API 參考。
+- [參數對照表](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/EnumMatrix.txt): 參數對照表（Class）API 參考。
+- [API Key 登入](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/login/loginAPIKey.txt): API Key 登入（ApikeyLogin）API 參考。
+- [登入](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/login/loginPassword.txt): 登入（login）API 參考。
+- [登出](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/logout.txt): 登出（Logout）API 參考。
+- [刪除批次委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/trade/batchOrder/BatchCancelOrder.txt): 刪除批次委託單（BatchCancelOrder）API 參考。
+- [批次修改委託價格](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/trade/batchOrder/BatchModifyPrice.txt): 批次修改委託價格（BatchModifyPrice）API 參考。
+- [批次修改委託數量](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/trade/batchOrder/BatchModifyQuantity.txt): 批次修改委託數量（BatchModifyQuantity）API 參考。
+- [取得批次委託明細](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/trade/batchOrder/BatchOrderDetail.txt): 取得批次委託明細（BatchOrderDetail）API 參考。
+- [取得批次委託列表](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/trade/batchOrder/BatchOrderList.txt): 取得批次委託列表（BatchOrderLists）API 參考。
+- [建立批次委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/trade/batchOrder/BatchPlaceOrder.txt): 建立批次委託單（BatchPlaceOrder）API 參考。
+- [刪除委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/trade/CancelOrder.txt): 刪除委託單（CancelOrder）API 參考。
+- [現沖券配額查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/trade/DaytradeAndStockInfo.txt): 現沖券配額查詢（DaytradeAndStockInfo）API 參考。
+- [查詢歷史成交](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/trade/FilledHistory.txt): 查詢歷史成交（FilledHistory）API 參考。
+- [取得委託單結果](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/trade/GetOrderResults.txt): 取得委託單結果（GetOrderResults）API 參考。
+- [取得委託單結果 (含歷程)](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/trade/GetOrderResultsDetail.txt): 取得委託單結果 (含歷程)（GetOrderResultsDetail）API 參考。
+- [資券配額查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/trade/MarginQuota.txt): 資券配額查詢（MarginQuota）API 參考。
+- [修改委託價格](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/trade/ModifyPrice.txt): 修改委託價格（ModifyPrice）API 參考。
+- [修改委託單數量](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/trade/ModifyQuantity.txt): 修改委託單數量（ModifyQuantity）API 參考。
+- [查詢歷史委託](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/trade/OrderHistory.txt): 查詢歷史委託（OrderHistory）API 參考。
+- [建立委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/trade/PlaceOrder.txt): 建立委託單（PlaceOrder）API 參考。
+- [查詢商品漲跌幅報表 ( 單筆 )](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/trade/QuerySymbolQuote.txt): 查詢商品漲跌幅報表 ( 單筆 )（query_symbol_quote）API 參考。
+- [查詢商品漲跌幅報表 ( 批次 )](https://www.fbs.com.tw/TradeAPI/docs/trading/library/go/trade/QuerySymbolSnapshot.txt): 查詢商品漲跌幅報表 ( 批次 )（query_symbol_snapshot）API 參考。
+- [銀行餘額查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/accountManagement/Balance.txt): 銀行餘額查詢（bankRemain）API 參考。
+- [庫存查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/accountManagement/Inventories.txt): 庫存查詢（inventories）API 參考。
+- [維持率查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/accountManagement/Maintenance.txt): 維持率查詢（maintenance）API 參考。
+- [交割款查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/accountManagement/QuerySettlement.txt): 交割款查詢（querySettlement）API 參考。
+- [已實現損益查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/accountManagement/RealizedPnLDetail.txt): 已實現損益查詢（realizedGainsAndLoses）API 參考。
+- [已實現損益彙總](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/accountManagement/RealizedPnLSum.txt): 已實現損益彙總（realizedGainsAndLosesSummary）API 參考。
+- [未實現損益查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/accountManagement/UnrealizedPnLDetail.txt): 未實現損益查詢（unrealizedGainsAndLoses）API 參考。
+- [參數對照表](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/EnumMatrix.txt): 參數對照表（Class）API 參考。
+- [API Key 登入](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/login/loginAPIKey.txt): API Key 登入（apikeyLogin）API 參考。
+- [登入](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/login/loginPassword.txt): 登入（login）API 參考。
+- [登出](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/logout.txt): 登出（logout）API 參考。
+- [刪除批次委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/trade/batchOrder/BatchCancelOrder.txt): 刪除批次委託單（batchCancelOrder）API 參考。
+- [批次修改委託價格](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/trade/batchOrder/BatchModifyPrice.txt): 批次修改委託價格（batchModifyPrice）API 參考。
+- [批次修改委託數量](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/trade/batchOrder/BatchModifyQuantity.txt): 批次修改委託數量（batchModifyQuantity）API 參考。
+- [取得批次委託明細](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/trade/batchOrder/BatchOrderDetail.txt): 取得批次委託明細（batchOrderDetail）API 參考。
+- [取得批次委託列表](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/trade/batchOrder/BatchOrderList.txt): 取得批次委託列表（batchOrderLists）API 參考。
+- [建立批次委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/trade/batchOrder/BatchPlaceOrder.txt): 建立批次委託單（batchPlaceOrder）API 參考。
+- [刪除委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/trade/CancelOrder.txt): 刪除委託單（cancelOrder）API 參考。
+- [現冲券配額查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/trade/DaytradeAndStockInfo.txt): 現冲券配額查詢（daytradeAndStockInfo）API 參考。
+- [查詢歷史成交](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/trade/FilledHistory.txt): 查詢歷史成交（filledHistory）API 參考。
+- [取得委託單結果](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/trade/GetOrderResults.txt): 取得委託單結果（getOrderResults）API 參考。
+- [取得委託單結果 (含歷程)](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/trade/GetOrderResultsDetail.txt): 取得委託單結果 (含歷程)（getOrderResultsDe）API 參考。
+- [資券配額查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/trade/MarginQuota.txt): 資券配額查詢（marginQuota）API 參考。
+- [修改委託價格](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/trade/ModifyPrice.txt): 修改委託價格（modifyPrice）API 參考。
+- [修改委託單數量](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/trade/ModifyQuantity.txt): 修改委託單數量（modifyQuantity）API 參考。
+- [查詢歷史委託](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/trade/OrderHistory.txt): 查詢歷史委託（orderHistory）API 參考。
+- [建立委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/trade/PlaceOrder.txt): 建立委託單（placeOrder）API 參考。
+- [查詢商品漲跌幅報表（單筆）](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/trade/QuerySymbolQuote.txt): 查詢商品漲跌幅報表（單筆）（querySymbolQuote）API 參考。
+- [查詢商品漲跌幅報表（批次）](https://www.fbs.com.tw/TradeAPI/docs/trading/library/nodejs/trade/QuerySymbolSnapshot.txt): 查詢商品漲跌幅報表（批次）（querySymbolSnapshot）API 參考。
+- [銀行餘額查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/accountManagement/Balance.txt): 銀行餘額查詢（bank_remain）API 參考。
+- [庫存查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/accountManagement/Inventories.txt): 庫存查詢（inventories）API 參考。
+- [維持率查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/accountManagement/Maintenance.txt): 維持率查詢（maintenance）API 參考。
+- [交割款查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/accountManagement/QuerySettlement.txt): 交割款查詢（query_settlement）API 參考。
+- [已實現損益查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/accountManagement/RealizedPnLDetail.txt): 已實現損益查詢（realized_gains_and_loses）API 參考。
+- [已實現損益彙總](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/accountManagement/RealizedPnLSum.txt): 已實現損益彙總（realized_gains_and_loses_summary）API 參考。
+- [未實現損益查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/accountManagement/UnrealizedPnLDetail.txt): 未實現損益查詢（unrealized_gains_and_loses）API 參考。
+- [參數對照表](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/EnumMatrix.txt): 參數對照表（Class）API 參考。
+- [API Key 登入](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/login/loginAPIKey.txt): API Key 登入（apikey_login）API 參考。
+- [登入](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/login/loginPassword.txt): 登入（login）API 參考。
+- [登出](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/logout.txt): 登出（logout）API 參考。
+- [刪除批次委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/trade/batchOrder/BatchCancelOrder.txt): 刪除批次委託單（batch_cancel_order）API 參考。
+- [批次修改委託價格](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/trade/batchOrder/BatchModifyPrice.txt): 批次修改委託價格（batch_modify_price）API 參考。
+- [批次修改委託數量](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/trade/batchOrder/BatchModifyQuantity.txt): 批次修改委託數量（batch_modify_quantity）API 參考。
+- [取得批次委託明細](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/trade/batchOrder/BatchOrderDetail.txt): 取得批次委託明細（batch_order_detail）API 參考。
+- [取得批次委託列表](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/trade/batchOrder/BatchOrderList.txt): 取得批次委託列表（batch_order_lists）API 參考。
+- [建立批次委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/trade/batchOrder/BatchPlaceOrder.txt): 建立批次委託單（batch_place_order）API 參考。
+- [刪除委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/trade/CancelOrder.txt): 刪除委託單（cancel_order）API 參考。
+- [現冲券配額查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/trade/DaytradeAndStockInfo.txt): 現冲券配額查詢（daytrade_and_stock_info）API 參考。
+- [查詢歷史成交](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/trade/FilledHistory.txt): 查詢歷史成交（filled_history）API 參考。
+- [取得委託單結果](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/trade/GetOrderResults.txt): 取得委託單結果（get_order_results）API 參考。
+- [取得委託單結果 (含歷程)](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/trade/GetOrderResultsDetail.txt): 取得委託單結果 (含歷程)（get_order_results_detail）API 參考。
+- [資券配額查詢](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/trade/MarginQuota.txt): 資券配額查詢（margin_quota）API 參考。
+- [修改委託價格](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/trade/ModifyPrice.txt): 修改委託價格（modify_price）API 參考。
+- [修改委託單數量](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/trade/ModifyQuantity.txt): 修改委託單數量（modify_quantity）API 參考。
+- [查詢歷史委託](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/trade/OrderHistory.txt): 查詢歷史委託（order_history）API 參考。
+- [建立委託單](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/trade/PlaceOrder.txt): 建立委託單（place_order）API 參考。
+- [查詢商品漲跌幅報表（單筆）](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/trade/QuerySymbolQuote.txt): 查詢商品漲跌幅報表（單筆）（query_symbol_quote）API 參考。
+- [查詢商品漲跌幅報表（批次）](https://www.fbs.com.tw/TradeAPI/docs/trading/library/python/trade/QuerySymbolSnapshot.txt): 查詢商品漲跌幅報表（批次）（query_symbol_snapshot）API 參考。
+- [事前準備](https://www.fbs.com.tw/TradeAPI/docs/trading/prepare.txt): 在開始富邦新一代 API 前，您必須完成以下步驟。
+- [快速開始](https://www.fbs.com.tw/TradeAPI/docs/trading/quickstart.txt): 請先參考事前準備完成風險預告書申請與憑證下載。
+- [速率限制](https://www.fbs.com.tw/TradeAPI/docs/trading/trade-rate-limit.txt): 當連線超過上限，登入時將收到以下訊息 :。
+- [帳務](https://www.fbs.com.tw/TradeAPI/docs/trading-future/guide/account_example.txt): 帳務（------）API 參考。
+- [非阻塞下單](https://www.fbs.com.tw/TradeAPI/docs/trading-future/guide/advance/asyn_order.txt): 首先，我們先理解阻塞與非阻塞的概念，。
+- [Python主動回報例外處理](https://www.fbs.com.tw/TradeAPI/docs/trading-future/guide/advance/python_callback_decorator.txt): 使用 Python 主動回報時，因為主動回報機制於獨自的 thread 中運行，因此若主動回報 callback function 內自己寫的程式碼執行產生錯誤，不會自動丟回錯誤訊息，可能造成程式 DEBUG 上的障礙。
+- [斷線重連](https://www.fbs.com.tw/TradeAPI/docs/trading-future/guide/advance/reconnect.txt): 以下將用簡單示範，利用callback偵測交易Socket，接收到斷線事件後，程式自動進行Socket重新連線:。
+- [錯誤碼與狀態碼對照表](https://www.fbs.com.tw/TradeAPI/docs/trading-future/guide/error-codes.txt): API 錯誤碼、狀態碼與事件代碼對照表
+- [主動回報](https://www.fbs.com.tw/TradeAPI/docs/trading-future/guide/report_example.txt): 主動回報（--------）API 參考。
+- [交易](https://www.fbs.com.tw/TradeAPI/docs/trading-future/guide/trade_example.txt): 交易（--------）API 參考。
+- [富邦新一代 API](https://www.fbs.com.tw/TradeAPI/docs/trading-future/introduction.txt): 富邦新一代 API 為您的程式交易，提供了完善的交易與行情API，滿足每一位開發者的量化與自動化交易需求。 提供用戶自由選擇主流開發語言( Python、C#、JavaScript)，在創建程式交易的過程中，輕易地取用 API，使用交易、行情服務。
+- [平倉查詢](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/accountManagement/ClosePositionRecord.txt): 平倉查詢（ClosePositionRecord）API 參考。
+- [混合部位查詢](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/accountManagement/HybridPosition.txt): 混合部位查詢（QueryHybridPPosition）API 參考。
+- [權益數查詢](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/accountManagement/QueryEquity.txt): 權益數查詢（QueryMarginEquity）API 參考。
+- [單式部位查詢](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/accountManagement/SinglePosition.txt): 單式部位查詢（QuerySinglePosition）API 參考。
+- [參數對照表](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/EnumMatrix.txt): 參數對照表（Class）API 參考。
+- [登入](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/login/loginAPIKey.txt): API Key 登入（ApikeyLogin）API 參考。
+- [登入](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/login/loginPassword.txt): 登入（Login）API 參考。
+- [登出](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/logout.txt): 登出（Logout）API 參考。
+- [刪除批次委託單](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/trade/batchOrder/BatchCancelOrder.txt): 刪除批次委託單（BatchCancelOrder）API 參考。
+- [批次修改委託價格](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/trade/batchOrder/BatchModifyPrice.txt): 批次修改委託價格（BatchModifyPrice）API 參考。
+- [批次修改委託數量](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/trade/batchOrder/BatchModifyQuantity.txt): 批次修改委託數量（BatchModifyLot）API 參考。
+- [取得批次委託明細](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/trade/batchOrder/BatchOrderDetail.txt): 取得批次委託明細（BatchOrderDetail）API 參考。
+- [取得批次委託列表](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/trade/batchOrder/BatchOrderList.txt): 取得批次委託列表（BatchOrderLists）API 參考。
+- [建立批次委託單](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/trade/batchOrder/BatchPlaceOrder.txt): 建立批次委託單（BatchPlaceOrder）API 參考。
+- [刪除委託單](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/trade/CancelOrder.txt): 刪除委託單（CancelOrder）API 參考。
+- [商品代號轉換](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/trade/ConvertSymbol.txt): 商品代號轉換（ConvertSymbol）API 參考。
+- [商品保證金查詢](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/trade/EstimateMargin.txt): 商品保證金查詢（QueryEstimateMargin）API 參考。
+- [查詢歷史成交](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/trade/FilledHistory.txt): 查詢歷史成交（FilledHistory）API 參考。
+- [取得委託單結果](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/trade/GetOrderResults.txt): 取得委託單結果（GetOrderResult）API 參考。
+- [取得委託單結果 (含歷程)](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/trade/GetOrderResultsDetail.txt): 取得委託單結果 (含歷程)（GetOrderResultDetail）API 參考。
+- [修改委託價格](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/trade/ModifyPrice.txt): 修改委託價格（ModifyPrice）API 參考。
+- [修改委託單數量](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/trade/ModifyQuantity.txt): 修改委託單數量（ModifyQuantity）API 參考。
+- [查詢歷史委託](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/trade/OrderHistory.txt): 查詢歷史委託（OrderHistory）API 參考。
+- [建立委託單](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/csharp/trade/PlaceOrder.txt): 建立委託單（PlaceOrder）API 參考。
+- [平倉查詢](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/accountManagement/ClosePositionRecord.txt): 平倉查詢（closePositionRecord）API 參考。
+- [混合部位查詢](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/accountManagement/HybridPosition.txt): 混合部位查詢（queryHybridPosition）API 參考。
+- [權益數查詢](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/accountManagement/QueryEquity.txt): 權益數查詢（queryMarginEquity）API 參考。
+- [單式部位查詢](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/accountManagement/SinglePosition.txt): 單式部位查詢（querySinglePosition）API 參考。
+- [參數對照表](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/EnumMatrix.txt): 參數對照表（Class）API 參考。
+- [登入](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/login/loginAPIKey.txt): API Key 登入（apikeyLogin）API 參考。
+- [登入](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/login/loginPassword.txt): 登入（login）API 參考。
+- [登出](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/logout.txt): 登出（logout）API 參考。
+- [刪除批次委託單](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/trade/batchOrder/BatchCancelOrder.txt): 刪除批次委託單（batchCancelOrder）API 參考。
+- [批次修改委託價格](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/trade/batchOrder/BatchModifyPrice.txt): 批次修改委託價格（batchModifyPrice）API 參考。
+- [批次修改委託數量](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/trade/batchOrder/BatchModifyQuantity.txt): 批次修改委託數量（batchModifyQuantity）API 參考。
+- [取得批次委託明細](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/trade/batchOrder/BatchOrderDetail.txt): 取得批次委託明細（batchOrderDetail）API 參考。
+- [取得批次委託列表](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/trade/batchOrder/BatchOrderList.txt): 取得批次委託列表（batchOrderLists）API 參考。
+- [建立批次委託單](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/trade/batchOrder/BatchPlaceOrder.txt): 建立批次委託單（batchPlaceOrder）API 參考。
+- [刪除委託單](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/trade/CancelOrder.txt): 刪除委託單（cancelOrder）API 參考。
+- [商品代號轉換](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/trade/ConvertSymbol.txt): 商品代號轉換（convertSymbol）API 參考。
+- [商品保證金查詢](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/trade/EstimateMargin.txt): 商品保證金查詢（queryEstimateMargin）API 參考。
+- [查詢歷史成交](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/trade/FilledHistory.txt): 查詢歷史成交（filledHistory）API 參考。
+- [取得委託單結果](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/trade/GetOrderResults.txt): 取得委託單結果（getOrderResults）API 參考。
+- [取得委託單結果 (含歷程)](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/trade/GetOrderResultsDetail.txt): 取得委託單結果 (含歷程)（getOrderResultsDetail）API 參考。
+- [修改委託價格](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/trade/ModifyPrice.txt): 修改委託價格（modifyPrice）API 參考。
+- [修改委託單數量](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/trade/ModifyQuantity.txt): 修改委託單數量（modifyLot）API 參考。
+- [查詢歷史委託](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/trade/OrderHistory.txt): 查詢歷史委託（orderHistory）API 參考。
+- [建立委託單](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/nodejs/trade/PlaceOrder.txt): 建立委託單（placeOrder）API 參考。
+- [平倉查詢](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/accountManagement/ClosePositionRecord.txt): 平倉查詢（close_position_record）API 參考。
+- [混合部位查詢](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/accountManagement/HybridPosition.txt): 混合部位查詢（query_hybrid_position）API 參考。
+- [權益數查詢](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/accountManagement/QueryEquity.txt): 權益數查詢（query_margin_equity）API 參考。
+- [單式部位查詢](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/accountManagement/SinglePosition.txt): 單式部位查詢（query_single_position）API 參考。
+- [參數對照表](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/EnumMatrix.txt): 參數對照表（Class）API 參考。
+- [登入](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/login/loginAPIKey.txt): API Key 登入（apikey_login）API 參考。
+- [登入](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/login/loginPassword.txt): 登入（login）API 參考。
+- [登出](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/logout.txt): 登出（logout）API 參考。
+- [刪除批次委託單](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/trade/batchOrder/BatchCancelOrder.txt): 刪除批次委託單（batch_cancel_order）API 參考。
+- [批次修改委託價格](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/trade/batchOrder/BatchModifyPrice.txt): 批次修改委託價格（batch_modify_price）API 參考。
+- [批次修改委託數量](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/trade/batchOrder/BatchModifyQuantity.txt): 批次修改委託數量（batch_modify_lot）API 參考。
+- [取得批次委託明細](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/trade/batchOrder/BatchOrderDetail.txt): 取得批次委託明細（batch_order_detail）API 參考。
+- [取得批次委託列表](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/trade/batchOrder/BatchOrderList.txt): 取得批次委託列表（batch_order_lists）API 參考。
+- [建立批次委託單](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/trade/batchOrder/BatchPlaceOrder.txt): 建立批次委託單（batch_place_order）API 參考。
+- [刪除委託單](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/trade/CancelOrder.txt): 刪除委託單（cancel_order）API 參考。
+- [商品代號轉換](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/trade/ConvertSymbol.txt): 商品代號轉換（convert_symbol）API 參考。
+- [商品保證金查詢](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/trade/EstimateMargin.txt): 商品保證金查詢（query_estimate_margin）API 參考。
+- [查詢歷史成交](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/trade/FilledHistory.txt): 查詢歷史成交（filled_history）API 參考。
+- [取得委託單結果](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/trade/GetOrderResults.txt): 取得委託單結果（get_order_results）API 參考。
+- [取得委託單結果 (含歷程)](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/trade/GetOrderResultsDetail.txt): 取得委託單結果 (含歷程)（get_order_results_detail）API 參考。
+- [修改委託價格](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/trade/ModifyPrice.txt): 修改委託價格（modify_price）API 參考。
+- [修改委託單數量](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/trade/ModifyQuantity.txt): 修改委託單數量（modify_lot）API 參考。
+- [查詢歷史委託](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/trade/OrderHistory.txt): 查詢歷史委託（order_history）API 參考。
+- [建立委託單](https://www.fbs.com.tw/TradeAPI/docs/trading-future/library/python/trade/PlaceOrder.txt): 建立委託單（place_order）API 參考。
+- [事前準備](https://www.fbs.com.tw/TradeAPI/docs/trading-future/prepare.txt): 使用期貨 API 前的事前準備
+- [快速開始](https://www.fbs.com.tw/TradeAPI/docs/trading-future/quickstart.txt): 快速開始期貨 SDK
+- [速率限制](https://www.fbs.com.tw/TradeAPI/docs/trading-future/trade-rate-limit.txt): 當連線超過上限，登入時將收到以下訊息 :。
+- [富邦新一代 API 快速上手](https://www.fbs.com.tw/TradeAPI/docs/welcome.txt): 在開始新一代 API 的旅程之前，您必須完成以下步驟 1. 至【事前準備】完成三步驟 a. 開戶 b.電子交易憑證申請 c. 簽署 API 使用聲明+連線測試 2. 選定欲使用的程式語言，並參考本頁對應之【範例程式】 3. 加入【Discord群組】獲取更多程式交易資源，解決您的疑難雜症
+- [以 LLM 輔助開發](https://www.fbs.com.tw/TradeAPI/docs/welcome/build-with-llm.txt): 利用大型語言模型協助完成 SDK 的整合與實作。
