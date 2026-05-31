@@ -42,7 +42,21 @@ fubon-tradeapi-ai-skill/
 
 ## 安裝成 Codex Skill
 
-將整個資料夾複製到：
+一鍵安裝或更新：
+
+Windows PowerShell：
+
+```powershell
+$skill="$env:USERPROFILE\.codex\skills\fubon-trade-api"; New-Item -ItemType Directory -Force (Split-Path $skill) | Out-Null; if (Test-Path "$skill\.git") { git -C $skill pull } else { git clone https://github.com/Kelu0427/fubon-tradeapi-ai-skill.git $skill }
+```
+
+macOS / Linux：
+
+```bash
+skill="$HOME/.codex/skills/fubon-trade-api"; mkdir -p "$(dirname "$skill")"; if [ -d "$skill/.git" ]; then git -C "$skill" pull; else git clone https://github.com/Kelu0427/fubon-tradeapi-ai-skill.git "$skill"; fi
+```
+
+手動安裝時，將整個資料夾複製到：
 
 ```text
 <CODEX_HOME>/skills/fubon-trade-api
