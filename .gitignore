@@ -1,5 +1,8 @@
 __pycache__/
 *.py[cod]
+.env
+.env.*
+!.env.example
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/

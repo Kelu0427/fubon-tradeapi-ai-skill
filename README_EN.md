@@ -85,6 +85,7 @@ After copying, start a new Codex session so the Skill metadata can be reloaded.
 - Prefer official online docs; use bundled local docs as an offline fallback or after running `sync`.
 - Trading and conditional-order examples can place real orders. Use placeholders and require parameter review before live use.
 - Do not paste personal IDs, passwords, API keys, certificate passwords, private keys, or account identifiers into chat.
+- Login examples should use environment variables. Copy `.env.example` to `.env` and fill in your own values; `.env` must not be committed to git.
 - When API behavior depends on SDK version, follow the version constraints in the official docs or the freshly synced local cache.
 
 ## License

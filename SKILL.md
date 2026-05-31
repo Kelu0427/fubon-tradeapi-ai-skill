@@ -70,6 +70,7 @@ python .\scripts\search_docs.py search "place_order OrderType PriceType TimeInFo
 - State the verified SDK version or version constraint when relevant.
 - Name the exact documentation anchors searched when giving non-trivial code, e.g. `place_order`, `Order Object`, `Intraday Quote`, `apikey_login`.
 - Use placeholders for secrets and personal data. Never ask users to paste passwords, API keys, private keys, ID numbers, or certificate passwords into chat.
+- When generating runnable examples that require Fubon credentials, create or update `.env.example` with placeholder variable names and ensure `.env` is ignored. Do not create a real `.env` with secret values unless the user explicitly asks, and never fill it with real credentials.
 - For trading code, explicitly identify whether it may place a real order. Prefer dry-run/review snippets unless the user explicitly asks for live order code.
 - For live order examples, make the account/order parameters obvious placeholders and include a final confirmation step in comments.
 - For market data examples, include `sdk.login(...)` and `sdk.init_realtime()` when the official docs require login for market data permission.
@@ -103,4 +104,5 @@ Before answering:
 - Market/order/price/time-in-force combinations are plausible and documented.
 - Error handling follows the documented SDK version behavior where available.
 - Secrets are placeholders or environment variables.
+- Credential setup uses `.env.example` or shell environment variables, not secrets in source code.
 
