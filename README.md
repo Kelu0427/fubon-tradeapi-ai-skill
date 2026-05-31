@@ -83,28 +83,6 @@ skill="$HOME/.codex/skills/fubon-trade-api"; mkdir -p "$(dirname "$skill")"; if 
 | 程式碼審查 | 使用 `$fubon-trade-api` 幫我檢查這段 `place_order` 程式碼，確認 enum、參數順序、價格型別和是否有實單風險。 |
 | 錯誤處理 | 使用 `$fubon-trade-api` 幫我補上行情 REST 查詢的錯誤處理，請依官方文件確認 `FugleAPIError` 用法。 |
 
-## 查詢官方文件
-
-網路可用時，優先查官方線上文件：
-
-```powershell
-python .\scripts\search_docs.py search "place_order OrderType PriceType TimeInForce" --online
-python .\scripts\search_docs.py section "Intraday Quote" --online
-python .\scripts\search_docs.py lines 23770 23820 --online
-```
-
-離線時使用本地快取：
-
-```powershell
-python .\scripts\search_docs.py search "place_order OrderType PriceType TimeInForce"
-```
-
-從官方 URL 更新本地快取：
-
-```powershell
-python .\scripts\search_docs.py sync
-```
-
 ## 注意事項
 
 - `llms.txt` 只是索引，產生或審查程式碼時應以 `llms-full.txt` 為準。

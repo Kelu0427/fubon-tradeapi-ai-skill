@@ -79,28 +79,6 @@ After copying, start a new Codex session so the Skill metadata can be reloaded.
 | Code review | Use `$fubon-trade-api` to review this `place_order` code and verify enums, argument order, price types, and live-order risk. |
 | Error handling | Use `$fubon-trade-api` to add error handling for a market-data REST query and verify `FugleAPIError` usage from the official docs. |
 
-## Manual Documentation Search
-
-Use online official docs first when network is available:
-
-```powershell
-python .\scripts\search_docs.py search "place_order OrderType PriceType TimeInForce" --online
-python .\scripts\search_docs.py section "Intraday Quote" --online
-python .\scripts\search_docs.py lines 23770 23820 --online
-```
-
-Use local cached docs when offline:
-
-```powershell
-python .\scripts\search_docs.py search "place_order OrderType PriceType TimeInForce"
-```
-
-Refresh the bundled local cache from official URLs:
-
-```powershell
-python .\scripts\search_docs.py sync
-```
-
 ## Safety Notes
 
 - `llms.txt` is only an index. Use `llms-full.txt` as the source of truth for code generation and code review.
