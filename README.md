@@ -27,6 +27,7 @@
 ```text
 fubon-tradeapi-ai-skill/
 |-- SKILL.md
+|-- LICENSE
 |-- README.md
 |-- README_EN.md
 |-- llms.txt
@@ -53,17 +54,20 @@ fubon-tradeapi-ai-skill/
 
 ## 使用範例
 
-```text
-使用 $fubon-trade-api 幫我寫 Python 程式：登入富邦 TradeAPI，查詢 2330 即時報價，不要下單。
-```
-
-```text
-使用 $fubon-trade-api 幫我檢查這段 place_order 程式碼，確認 enum、參數順序與價格型別是否符合官方文件。
-```
-
-```text
-使用 $fubon-trade-api 幫我寫 API Key 登入範例，敏感資料請用環境變數。
-```
+| 種類 | 提示詞範例 |
+| --- | --- |
+| SDK / 安裝 | 使用 `$fubon-trade-api` 幫我確認目前富邦 TradeAPI SDK 支援哪些 Python 版本，並給我 Windows 安裝步驟。 |
+| 登入 | 使用 `$fubon-trade-api` 幫我寫 Python 登入範例，帳密、憑證路徑和憑證密碼都改用環境變數。 |
+| API Key 登入 | 使用 `$fubon-trade-api` 幫我寫 API Key 登入範例，並確認官方文件要求的 SDK 最低版本。 |
+| 行情 / REST | 使用 `$fubon-trade-api` 幫我寫 Python 程式：登入後查詢 2330 即時報價，不要下單。 |
+| 行情 / WebSocket | 使用 `$fubon-trade-api` 幫我寫訂閱股票成交明細 WebSocket 的範例，包含連線、訂閱、callback 和斷線處理。 |
+| 交易 / 股票下單 | 使用 `$fubon-trade-api` 幫我寫股票限價買進範例，但請用明顯 placeholder，並加上送出前確認註解。 |
+| 交易 / 改刪單 | 使用 `$fubon-trade-api` 幫我寫股票委託改價與刪單範例，並確認需要哪些委託識別欄位。 |
+| 帳務 / 股票 | 使用 `$fubon-trade-api` 幫我查官方文件裡股票帳務與委託查詢有哪些方法，並列出 Python method name。 |
+| 期貨 / 選擇權 | 使用 `$fubon-trade-api` 幫我寫期貨保證金查詢範例，確認 namespace、method name 和帳號型別。 |
+| 智慧條件單 | 使用 `$fubon-trade-api` 幫我寫停損停利條件單範例，並說明哪些欄位可能因 SDK 版本不同而需要確認。 |
+| 程式碼審查 | 使用 `$fubon-trade-api` 幫我檢查這段 `place_order` 程式碼，確認 enum、參數順序、價格型別和是否有實單風險。 |
+| 錯誤處理 | 使用 `$fubon-trade-api` 幫我補上行情 REST 查詢的錯誤處理，請依官方文件確認 `FugleAPIError` 用法。 |
 
 ## 查詢官方文件
 
@@ -94,3 +98,7 @@ python .\scripts\search_docs.py sync
 - 交易與條件單範例可能會送出真實委託，執行前必須檢查帳號、商品、價格、數量與買賣方向。
 - 不要在聊天中貼上身分證字號、密碼、API Key、憑證密碼、私鑰或帳號等敏感資料。
 - 若 API 行為與 SDK 版本有關，依官方文件或剛同步的本地快取為準。
+
+## 授權
+
+本專案採用 [MIT License](LICENSE)。
