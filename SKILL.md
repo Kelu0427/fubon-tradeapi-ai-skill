@@ -1,6 +1,6 @@
 ---
 name: fubon-trade-api
-description: Use when helping users write, review, debug, or validate code for Fubon Neo / Fubon Securities TradeAPI / 富邦新一代 API / 富邦證券 API, including natural-language requests about market data, stock trading, futures/options trading, account queries, conditional orders, SDK installation, authentication, certificates, and API Key login. This skill uses the official online llms.txt and llms-full.txt first, with bundled local copies as offline fallback.
+description: Use when helping users write, review, debug, or validate code for Fubon Neo / Fubon Securities TradeAPI / 富邦新一代 API / 富邦證券 API, including natural-language requests about market data, stock trading, futures/options trading, account queries, conditional orders, SDK installation, local environment checks, latest SDK setup, authentication, certificates, and API Key login. This skill uses the official online llms.txt and llms-full.txt first, with bundled local copies as offline fallback.
 metadata:
   short-description: Build and verify Fubon TradeAPI code
 ---
@@ -22,7 +22,7 @@ Do not invent API names, enum names, parameter order, or object fields. Prefer o
 ## Workflow
 
 1. Classify the user's intent:
-   - SDK setup/version compatibility
+   - SDK setup/version compatibility, local environment checks, and latest SDK installation/update
    - authentication, password login, API Key login, certificate login
    - market data REST
    - market data WebSocket
@@ -40,7 +40,7 @@ Do not invent API names, enum names, parameter order, or object fields. Prefer o
 
 Use these natural-language cues and stable API terms to choose searches:
 
-- setup/version/install/Python version/SDK: search `SDK`, `compatibility`, `Python 3.13`, `v2.2.8`.
+- setup/version/install/environment check/latest SDK/Python version/SDK: search `SDK`, `compatibility`, `Python 3.13`, `v2.2.8`, platform-specific SDK download names, and install steps.
 - login/certificate/API Key/account: search `login`, `apikey_login`, `API Key`, `certPath`, `Account`.
 - stock quote/price/K-line/books/trades: search `Intraday Quote`, `intraday.quote`, `Historical Candles`, `Trades`, `Books`.
 - WebSocket/subscribe/realtime streaming: search `websocket_client`, `subscribe`, `Trades`, `Books`, `Candles`.

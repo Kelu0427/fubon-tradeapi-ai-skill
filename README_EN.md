@@ -10,7 +10,7 @@ Primary documentation sources:
 
 ## What This Skill Covers
 
-- SDK installation and version compatibility.
+- SDK installation, version compatibility, local environment checks, and latest-version setup.
 - Password login, API Key login, certificate paths, and account responses.
 - Stock market data REST and WebSocket workflows.
 - Futures/options market data and trading/account workflows.
@@ -66,7 +66,7 @@ After copying, start a new Codex session so the Skill metadata can be reloaded.
 
 | Category | Prompt example |
 | --- | --- |
-| SDK / install | Use `$fubon-trade-api` to confirm which Python versions the Fubon TradeAPI SDK supports and give me Windows installation steps. |
+| SDK / install / environment check | Use `$fubon-trade-api` to check whether my local environment meets Fubon TradeAPI SDK requirements, including Python version, operating system, whether the SDK is installed, and help install or update to the latest official version. |
 | Login | Use `$fubon-trade-api` to write a Python login example using environment variables for the ID, password, certificate path, and certificate password. |
 | API Key login | Use `$fubon-trade-api` to write an API Key login example and verify the minimum SDK version required by the official docs. |
 | Market data / REST | Use `$fubon-trade-api` to write Python code that logs in and queries the real-time quote for 2330. Do not place an order. |

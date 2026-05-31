@@ -14,7 +14,7 @@
 
 ## 支援範圍
 
-- SDK 安裝與版本相容性
+- SDK 安裝、版本相容性、本地環境檢查與最新版安裝
 - 一般登入、API Key 登入、憑證路徑與帳號回傳資料
 - 股票行情 REST / WebSocket
 - 期貨與選擇權行情、交易與帳務查詢
@@ -70,7 +70,7 @@ skill="$HOME/.codex/skills/fubon-trade-api"; mkdir -p "$(dirname "$skill")"; if 
 
 | 種類 | 提示詞範例 |
 | --- | --- |
-| SDK / 安裝 | 使用 `$fubon-trade-api` 幫我確認目前富邦 TradeAPI SDK 支援哪些 Python 版本，並給我 Windows 安裝步驟。 |
+| SDK / 安裝 / 環境檢查 | 使用 `$fubon-trade-api` 幫我檢查本機環境是否符合富邦 TradeAPI SDK 要求，包含 Python 版本、作業系統、SDK 是否已安裝，並協助安裝或更新到官方最新版。 |
 | 登入 | 使用 `$fubon-trade-api` 幫我寫 Python 登入範例，帳密、憑證路徑和憑證密碼都改用環境變數。 |
 | API Key 登入 | 使用 `$fubon-trade-api` 幫我寫 API Key 登入範例，並確認官方文件要求的 SDK 最低版本。 |
 | 行情 / REST | 使用 `$fubon-trade-api` 幫我寫 Python 程式：登入後查詢 2330 即時報價，不要下單。 |
