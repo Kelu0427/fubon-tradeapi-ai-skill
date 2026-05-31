@@ -7,7 +7,7 @@ metadata:
 
 # Fubon TradeAPI Skill
 
-Use this skill whenever the user asks for help with Fubon Neo, Fubon Securities API, Fubon TradeAPI, 富邦新一代 API, 富邦證券 API, or natural-language-to-code assistance for Fubon market data, trading, account, futures/options, or condition-order workflows.
+Use this skill whenever the user asks for help with Fubon Neo, Fubon Securities API, Fubon TradeAPI, 富邦新一代 API, 富邦證券 API, or natural-language-to-code assistance for Fubon market data, trading, account, futures/options, condition-order workflows, or large-project Fubon API audits.
 
 ## Source Of Truth
 
@@ -29,6 +29,7 @@ Do not invent API names, enum names, parameter order, or object fields. Prefer o
    - stock trading and stock account queries
    - futures/options trading and account queries
    - smart/conditional orders
+   - large-project audit for an existing app/repository using Fubon APIs
    - error handling, reconnect, or rate limit behavior
 2. Determine the target language. If unspecified, default to Python and say that assumption.
 3. Search the docs with `scripts/search_docs.py`; add `--online` when current official docs are needed and network is available.
@@ -47,6 +48,18 @@ Use these natural-language cues and stable API terms to choose searches:
 - stock order/buy/sell/modify/cancel/order result: search `place_order`, `Order Object`, `modify_price`, `cancel_order`, `get_order_results`.
 - futures/options/margin/position: search `trading-future`, `place_order`, `query_margin_equity`, `query_single_position`, `query_estimate_margin`.
 - conditional order/TPSL/trailing profit/time slice: search `smart-condition`, `single_condition`, `multi_condition`, `TPSL`, `trail_profit`, `time_slice_order`.
+- large project audit/repository review/automation system/Fubon integration: scan code for Fubon SDK imports, login/session managers, market-data clients, order adapters, accounting services, `.env.example`, secret handling, paper/live gates, risk managers, mock fallbacks, and docs. Verify SDK calls against `llms-full.txt`; do not log in or place orders.
+
+## Large Project Audit Output
+
+For a large project audit, produce a structured report:
+
+- Scope: files/modules inspected and Fubon workflows found.
+- P0: issues that can leak secrets, place unintended live orders, bypass risk controls, or use clearly wrong Fubon API calls.
+- P1: likely API mismatches, missing login/init/logout handling, weak paper/live separation, incomplete `.env.example`, or stale SDK/version assumptions.
+- P2: maintainability, observability, documentation, and test coverage improvements.
+- Verification: commands/tests the user can run without real credentials, plus any manual checks needed before live use.
+- Safety note: state whether the review was static only and whether any real login/order action was intentionally avoided.
 
 ## Search Examples
 
@@ -95,6 +108,7 @@ Before answering:
 
 - You searched official online `llms-full.txt` when possible, or the bundled local cache when offline. Do not rely on `llms.txt` alone.
 - The code path matches the requested domain: stock vs futures/options, REST vs WebSocket, trading vs condition order.
+- For large projects, all Fubon SDK entry points, secret sources, paper/live gates, risk controls, and mock/fallback paths were identified or explicitly called out as not found.
 - The code imports every SDK class/constant it uses.
 - Function/method names match the target language casing (`place_order` in Python, `placeOrder` in JavaScript, `PlaceOrder` in C#).
 - Enum/member casing matches the target language.

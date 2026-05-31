@@ -20,6 +20,7 @@
 - 期貨與選擇權行情、交易與帳務查詢
 - 股票下單、改價、刪單、委託與成交查詢
 - 智慧條件單：單一條件、多條件、停損停利、移動停利、分時分量
+- 大型 Fubon API 串接專案檢查：掃描整體架構、SDK 使用點、設定、風控與文件一致性
 - 程式碼審查：方法名稱、enum、參數順序、物件欄位、版本限制、實單風險
 
 ## 專案結構
@@ -80,6 +81,7 @@ skill="$HOME/.codex/skills/fubon-trade-api"; mkdir -p "$(dirname "$skill")"; if 
 | 帳務 / 股票 | 使用 `$fubon-trade-api` 幫我查官方文件裡股票帳務與委託查詢有哪些方法，並列出 Python method name。 |
 | 期貨 / 選擇權 | 使用 `$fubon-trade-api` 幫我寫期貨保證金查詢範例，確認 namespace、method name 和帳號型別。 |
 | 智慧條件單 | 使用 `$fubon-trade-api` 幫我寫停損停利條件單範例，並說明哪些欄位可能因 SDK 版本不同而需要確認。 |
+| 大型專案檢查 | 使用 `$fubon-trade-api` 幫我檢查這個大型台股自動交易專案的 Fubon API 串接，請掃描登入、行情、交易、帳務、設定檔、secret、paper/live gate、風控與官方 API 一致性，並輸出 P0/P1/P2 問題、修正建議與驗證步驟；不要實際登入或下單。 |
 | 程式碼審查 | 使用 `$fubon-trade-api` 幫我檢查這段 `place_order` 程式碼，確認 enum、參數順序、價格型別和是否有實單風險。 |
 | 錯誤處理 | 使用 `$fubon-trade-api` 幫我補上行情 REST 查詢的錯誤處理，請依官方文件確認 `FugleAPIError` 用法。 |
 

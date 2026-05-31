@@ -16,6 +16,7 @@ Primary documentation sources:
 - Futures/options market data and trading/account workflows.
 - Stock trading: place, modify, cancel, and query orders.
 - Smart/conditional orders: single condition, multi condition, TPSL, trailing profit, and time-slice orders.
+- Large Fubon API project audits: scan architecture, SDK usage points, settings, risk controls, and documentation consistency.
 - Code review checks for method names, enums, argument order, object fields, version constraints, and live-order risk.
 
 ## Project Structure
@@ -76,6 +77,7 @@ After copying, start a new Codex session so the Skill metadata can be reloaded.
 | Accounting / stock | Use `$fubon-trade-api` to find stock accounting and order-query methods in the official docs and list their Python method names. |
 | Futures/options | Use `$fubon-trade-api` to write a futures margin query example and verify the namespace, method name, and account type. |
 | Smart condition orders | Use `$fubon-trade-api` to write a TPSL condition-order example and explain which fields may require SDK-version checks. |
+| Large project audit | Use `$fubon-trade-api` to audit this large Taiwan stock automation project's Fubon API integration. Scan login, market data, trading, accounting, settings, secrets, paper/live gates, risk controls, and official API consistency. Output P0/P1/P2 findings, fixes, and validation steps. Do not actually log in or place orders. |
 | Code review | Use `$fubon-trade-api` to review this `place_order` code and verify enums, argument order, price types, and live-order risk. |
 | Error handling | Use `$fubon-trade-api` to add error handling for a market-data REST query and verify `FugleAPIError` usage from the official docs. |
 
